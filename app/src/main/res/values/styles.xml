@@ -1,0 +1,24 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light">
+        <!-- Customize your theme here. -->
+        <item name="android:colorBackground">#CFE3E2</item>
+    </style>
+
+    <style name="Button">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@color/colorPrimaryDark</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+
+    <style name="ThemeOverlay.AppTheme.ActionBar" parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:textColorPrimary">#FFFFFF</item>
+        <item name="android:textColorSecondary">?android:textColorPrimary</item>
+        <item name="actionMenuTextColor">?android:textColorPrimary</item>
+        <item name="colorControlNormal">?android:textColorPrimary</item>
+    </style>
+</resources>

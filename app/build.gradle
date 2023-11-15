@@ -1,0 +1,53 @@
+plugins {
+    id 'com.android.application'
+    id 'com.google.gms.google-services'
+}
+
+android {
+	namespace 'es.upm.miw.weather'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "es.upm.miw.weather"
+        minSdk 26
+        targetSdk 33
+        versionCode 1
+        versionName "1.0"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    implementation "androidx.appcompat:appcompat:$appcompatVersion"
+    implementation(platform("com.google.firebase:firebase-bom:$firebaseBoMVersion"))
+
+    // Firebase Auth
+    implementation "com.google.firebase:firebase-auth"
+    // https://github.com/firebase/FirebaseUI-Android/tree/master/auth
+    implementation "com.firebaseui:firebase-ui-auth:$firebaseUIAuthVersion"
+
+    // When using the BoM, don't specify versions in Firebase dependencies
+    implementation 'com.google.firebase:firebase-analytics'
+
+    // Volley libraries
+    implementation "com.android.volley:volley:$rootProject.volleyVersion"
+    implementation "com.google.code.gson:gson:$rootProject.gsonVersion"
+
+    // Firestore
+    implementation("com.google.firebase:firebase-firestore")
+    implementation 'com.firebaseui:firebase-ui-firestore:8.0.2'
+    implementation "com.firebaseui:firebase-ui-database:8.0.2"
+    implementation 'androidx.cardview:cardview:1.0.0'
+
+}

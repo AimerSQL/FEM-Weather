@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">[MiW] Weather</string>
+    <string name="txtStart">Iniciar</string>
+    <string name="signed_in">Signed in!</string>
+    <string name="signed_out">Signed out!</string>
+    <string name="signed_cancelled">Signed in cancelled</string>
+    <string name="logout_button">Logout</string>
+    <string name="firebase_user_fmt">Firebase User: %s</string>
+    <string name="weatherTitle">Weather</string>
+    <string name="history_button">WeatherHistory</string>
+    <string name="txtWeather">Weather:</string>
+</resources>
